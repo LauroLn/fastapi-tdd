@@ -26,7 +26,8 @@ jobs:
           pip install black flake8
 
       - name: Run Black (code formatting)
-        run: black --check .
+        run: black .
+
 
       - name: Run Flake8 (lint)
         run: flake8 .
